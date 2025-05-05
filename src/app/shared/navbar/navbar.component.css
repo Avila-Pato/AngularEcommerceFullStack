@@ -1,0 +1,10 @@
+/* :host {
+    display: block;
+    background-color: #f8f8f8;
+    padding: 10px;
+} */
+a:hover {
+    color: #c4410e;
+    text-decoration: none;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1.4s;
+}
