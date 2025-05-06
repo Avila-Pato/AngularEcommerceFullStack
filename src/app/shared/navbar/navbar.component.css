@@ -11,18 +11,18 @@ a:hover {
 
 
 /* navbar.component.css */
-.default-navbar {
-    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
-    
-    
-  }
+.visible-navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10;
+  transform: translateY(0);
+  transition: transform 0.3s ease-in-out;
+  margin-top: 30px;
+}
 
-  .scrolled-navbar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    z-index: 10;
-  }
-  
-  
+.hidden-navbar {
+  transform: translateY(-100%);
+  transition: transform 0.3s ease-in-out;
+}

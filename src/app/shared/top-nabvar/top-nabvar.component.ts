@@ -13,20 +13,29 @@ export class TopNabvarComponent {
   lastScrollTop = 0;
 
   @HostListener('window:scroll', [])
-  
   onWindowScroll() {
     const scrollTop = window.scrollY || document.documentElement.scrollTop;
 
-    this.isScrolled = scrollTop > 100;
+    // Detecta si ha hecho scroll hacia abajo (es decir, el valor de scroll aumenta)
+    if (scrollTop > 100) {
+      this.isScrolled = true;
+    } else {
+      this.isScrolled = false;
+    }
 
     const scrollDelta = scrollTop - this.lastScrollTop;
 
-    if(scrollDelta > 20) {
-      this.showNavbar = false;
-    } else if (scrollDelta < -20 && scrollTop < document.body.scrollHeight * 0.7) {
+    // Mostrar navbar cuando subes
+    if (scrollDelta < 0) {
       this.showNavbar = true;
     }
 
-    this.lastScrollTop = scrollTop;
+    // Ocultar navbar cuando bajas
+    if (scrollDelta > 10) {
+      this.showNavbar = false;
+    }
+
+    // Actualiza la posición del scroll para la siguiente comparación
+    this.lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
   }
 }
