@@ -8,3 +8,18 @@ a:hover {
     text-decoration: none;
     transition: cubic-bezier(0.19, 1, 0.22, 1) 1.4s;
 }
+
+
+/* navbar.component.css */
+.default-navbar {
+    transition: cubic-bezier(0.075, 0.82, 0.165, 1) 0.4s;
+    
+    
+  }
+  .scrolled-navbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+   
+  }
+  
