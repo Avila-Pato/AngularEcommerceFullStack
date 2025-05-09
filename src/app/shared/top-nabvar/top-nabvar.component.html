@@ -3,7 +3,7 @@
     'hidden-navbar': !showNavbar,
     'visible-navbar': showNavbar
   }"
-  class="flex justify-between items-center bg-[#a8a29e] px-20 text-sm py-2 md:mb-12"
+  class="flex justify-between items-center bg-[#a8a29e] px-20 text-sm py-2 md:mb-12 relative"
 >
   <div class="flex space-x-2 md:mr-12">
     <button>
@@ -43,21 +43,21 @@
       </svg>
     </button>
   </div>
-  <div class="hidden space-x-2 EncodeSans w-full justify-end pr-12 gap-4 md:hidden sm:hidden xs:hidden lg:flex">
-    <a class="">Conocenos</a>
-    <a class="">Formatos y salas</a>
-    <a>Otros servicios</a>
-    <a>Trabaja con nosotros</a>
+  <div class="hidden space-x-2 EncodeSans w-full justify-end-safe pr-32 gap-4 md:hidden sm:hidden xs:hidden lg:flex">
+    <a class="cursor-pointer">Conocenos</a>
+    <a class="cursor-pointer">Formatos y salas</a>
+    <a class="cursor-pointer">Otros servicios</a>
+    <a  class="cursor-pointer">Trabaja con nosotros</a>
   </div>
-    <div class="flex gap-3 text-white ">
+      <div class="flex gap-3   text-white absolute right-0 mr-12">
       <button
-        class="cursor-pointer rounded-xs border-2 px-1 bg-[#b91c1c]  border-[#b91c1c]"
+        class="cursor-pointer rounded-xs py-1.5   px-1 bg-[#b91c1c]  border-[#b91c1c]"
       >
         Ingresar
       </button>
    
         <button
-        class="cursor-pointer rounded-xs border-2 px-1 bg-[#807d7b]  border-[#807d7b]"
+        class="cursor-pointer rounded-xs  px-1 bg-[#807d7b]  border-[#807d7b]"
         >
         Registrarse
     </button>
