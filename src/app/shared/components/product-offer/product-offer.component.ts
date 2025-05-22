@@ -45,3 +45,4 @@ export class ProductOfferComponent  implements OnInit {
 }
 
 //basicamente  se usa   [innerHTML]="getSafeHtml(...)" para que la  descripción con HTML (<p>, <ul>, <li>, <b>, etc.) se renderice correctamente en Angular desde un mock de datos osea un diccionario.
+// sera asi <div class="mt-2" [innerHTML]="getSafeHtml(product.description)"></div>
