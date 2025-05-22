@@ -36,5 +36,5 @@ nav {
 
 @font-face {
     font-family: 'EncodeSans';
-    src: url(../../../assets/fonts/EncodeSansCondensed-Thin.ttf) format('truetype'),
+    src: url(/src/assets/fonts/EncodeSansCondensed-Thin.ttf) format('truetype'),
 }
