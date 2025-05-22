@@ -1,9 +1,9 @@
 import { Component } from '@angular/core';
 import { RouterOutlet } from '@angular/router';
-import { NavbarComponent } from './shared/navbar/navbar.component';
+import { NavbarComponent } from './shared/home/navbar/navbar.component';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './shared/home/home.component';
-import { TopNabvarComponent } from './shared/top-nabvar/top-nabvar.component';
+import { TopNabvarComponent } from './shared/home/top-nabvar/top-nabvar.component';
 
 @Component({
   selector: 'app-root',
