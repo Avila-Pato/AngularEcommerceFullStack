@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { ProductOfferComponent } from '../components/product-offer/product-offer.component';
 
+
 @Component({
   selector: 'app-home',
   imports: [ProductOfferComponent],
@@ -10,3 +11,4 @@ import { ProductOfferComponent } from '../components/product-offer/product-offer
 export class HomeComponent {
 
 }
+

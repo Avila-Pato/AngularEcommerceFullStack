@@ -11,6 +11,7 @@ import { TopNabvarComponent } from './shared/top-nabvar/top-nabvar.component';
   standalone: true, 
   templateUrl: './app.component.html',  
   styleUrl: './app.component.css'
+  
 })
 export class AppComponent {
   title = 'mi-proyecto-angular';

@@ -6,6 +6,7 @@ import { Component } from '@angular/core';
   imports: [CurrencyPipe],
   templateUrl: './product-offer.component.html',
   styleUrl: './product-offer.component.css'
+  
 })
 export class ProductOfferComponent {
   
