@@ -1,6 +1,5 @@
-import { Product } from "../shared/models/product";
 
-export const PRODUCTS: Product[] = [
+export const PRODUCTS = [
   {
     id: '1',
     name: 'Laptop Gamer Razer Blade 15',
