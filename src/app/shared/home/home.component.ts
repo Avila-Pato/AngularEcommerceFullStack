@@ -1,29 +1,33 @@
-import { Component, AfterViewInit } from '@angular/core';
+import { Component } from '@angular/core';
 import { ProductOfferComponent } from '../components/product-offer/product-offer.component';
 import { Product } from '../models/product';
 import { PRODUCTS } from '../../mock/products';
-import { initFlowbite } from 'flowbite';
 
 @Component({
   selector: 'app-home',
   imports: [ProductOfferComponent],
-  standalone: true, 
+  standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
 })
-export class HomeComponent implements AfterViewInit {
+export class HomeComponent {
   products: Product[] = PRODUCTS;
   productOffers: Product[] = [];
+  currentSlide = 0;
 
   constructor() {
-    this.productOffers = this.products.filter(
-      (product) => product.previusPrice
-    );
+    this.productOffers = this.products.filter(product => product.previusPrice);
   }
 
-  ngAfterViewInit(): void {
-    setTimeout(() => {
-        initFlowbite();
-    }, 0);
-}
+  nextSlide() {
+    this.currentSlide = (this.currentSlide + 1) % this.productOffers.length;
+  }
+
+  prevSlide() {
+    this.currentSlide = (this.currentSlide - 1 + this.productOffers.length) % this.productOffers.length;
+  }
+
+  goToSlide(index: number) {
+    this.currentSlide = index;
+  }
 }
