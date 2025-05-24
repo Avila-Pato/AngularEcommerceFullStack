@@ -1,42 +1,56 @@
-<div class="rounded-md shadow-md max-w-full md:pe-32 max-h-screen   ml-20 md:ml-20 xl:ml-20 lg:ml-16 mt-12 p-6 flex ">
-    <div class=" ">
-        <h2 class="text-2xl font-medium">{{product.name}}</h2>
-   
-    <div class="flex gap-2 pt-2"> 
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px" height="20px" class="fill-yellow-500"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px" height="20px" class="fill-yellow-500"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px" height="20px" class="fill-yellow-500"><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px" height="20px" class="fill-zinc-300  "><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/></svg>
-        <div class="text-sm text-gray-500 pl-5 font-medium  ">
-           | {{product.reviews}}
-           reviews
-         </div>
-         
-         </div>
-         <div>
-             <div class="text-lg text-gray-500 items-baseline font-medium  pt-2">
-                 <span>
-                     {{product.price | currency:'USD' : 'symbol'}}
-                    </span>
-                    @if (product.previusPrice) {
-                        <span class="text-sm text-gray-500 line-through">
-                            {{product.previusPrice | currency:'USD' : 'symbol'}}
-                        </span>
-                        <div class="flex mt-4 text-sm  font-medium border-t w-[105px]">
-                            <a href="" class="px-2 flex cursor-pointer hover:translate-x-1 mt-1 transition-transform duration-300 hover:cursor-pointer">
-                                <p class="text-lg">
-                                    ver más
-                                  </p>
-                                <div class="ml-0.5 mt-1  ">
-                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="20px" class="fill-gray-500 scale-75 mt-0.5 hover:bounce-out-right "><!--!Font Awesome Free 6.7.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/></svg>
-                                </div>
-                            </a>
-                        </div>
-                        }
-                        <div class="absolute top-0 right-0 border py-2 px-1 rounded-full mt-10 mr-2  text-white font-bold bg-red-500  z-10 ">
-                            {{discount | percent}}
-                        </div>
-                        <div class="absolute top-0  translate-x-16 scale-75 ">
-                        <img [src]="product.urlImage" [alt]="product.name">
-                    </div>
-            </div>
+<div class="relative rounded-md shadow-md max-w-full p-6 flex bg-white">
+  <!-- Contenido del producto -->
+  <div class="w-1/2 ml-9">
+    <h2 [innerHTML]="getSafeHtml(product().name)" class="text-2xl font-medium"></h2>
+
+    <div class="flex gap-2 pt-2">
+      <!-- Estrellas de rating -->
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512" width="20px" height="20px" class="fill-yellow-500">
+        <path d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z"/>
+      </svg>
+      <!-- Repetir estrellas según rating -->
+      <div class="text-sm text-gray-500 pl-5 font-medium">
+        | {{ product().reviews }} reviews
+      </div>
+    </div>
+
+    <div class="text-lg text-gray-500 items-baseline font-medium pt-2">
+      <span>{{ product().price | currency : "USD" : "symbol" }}</span>
+      @if (product().previusPrice) {
+        <span class="text-sm text-gray-500 line-through ml-2">
+          {{ product().previusPrice | currency : "USD" : "symbol" }}
+        </span>
+      }
+    </div>
+
+    <div class="flex mt-4 text-sm font-medium border-t w-[105px]">
+      <a href="#" class="px-2 flex cursor-pointer hover:translate-x-1 mt-1 transition-transform duration-300">
+        <p class="text-lg">ver más</p>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" width="20px" height="20px" class="fill-gray-500 scale-75 mt-0.5">
+          <path d="M438.6 278.6c12.5-12.5 12.5-32.8 0-45.3l-160-160c-12.5-12.5-32.8-12.5-45.3 0s-12.5 32.8 0 45.3L338.8 224 32 224c-17.7 0-32 14.3-32 32s14.3 32 32 32l306.7 0L233.4 393.4c-12.5 12.5-12.5 32.8 0 45.3s32.8 12.5 45.3 0l160-160z"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+
+  <!-- Imagen del producto con posicionamiento personalizado -->
+  <div class="w-1/2 relative ">
+    <img 
+      [src]="product().urlImage"
+      [alt]="product().name"
+      class="absolute object-contain "
+      [ngStyle]="{
+        'top': product().imagePosition?.top,
+        'right': product().imagePosition?.right,
+        'width': product().imagePosition?.width,
+        'scale' : product().imagePosition?.scale,
+        
+      }"
+    />
+  </div>
+
+  <!-- Badge de descuento -->
+  <div class="absolute top-0 right-0 border py-2 px-3 rounded-full mt-4 mr-4 text-white font-bold bg-red-500 z-10">
+    {{ discount | percent }}
+  </div>
+</div>

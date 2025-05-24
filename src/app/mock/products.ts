@@ -2,7 +2,7 @@
 export const PRODUCTS = [
   {
     id: '1',
-    name: 'Laptop Gamer Razer Blade 15',
+    name: 'Laptop Gamer Razer <br/> Blade 15',
     description: `<p class="mb-2">La máquina definitiva para gaming y creación de contenido. Diseñada con chasis de aluminio CNC y sistema de refrigeración vapor chamber.</p>
                   <ul class="list-disc pl-6">
                     <li><b>Procesador Intel Core i7-12800H</b> de 14 núcleos (4.8GHz Turbo)</li>
@@ -12,10 +12,19 @@ export const PRODUCTS = [
                     <li>Almacenamiento ultrarrápido: 1TB SSD PCIe 4.0 (2 slots M.2 disponibles)</li>
                     <li>Conectividad completa: Thunderbolt 4, USB-C, HDMI 2.1, Wi-Fi 6E</li>
                   </ul>`,
-    urlImage: '/assets/images/gaming-laptop.jpg',
+                  
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(2).png?,fo-auto,',
     reviews: 245,
     price: 1899.99,
-    previusPrice: 2199.99
+    previusPrice: 2199.99,
+    imagePosition: {
+      top: '20px',
+      right: '50px',
+      width: '1300px',
+      scale: '1.2'
+    
+      
+    }
   },
   {
     id: '2',
@@ -29,10 +38,15 @@ export const PRODUCTS = [
                     <li>Diseño ergonómico con almohadillas de piel suave premium</li>
                     <li>Asistente de voz integrado con manos libres y control táctil intuitivo</li>
                   </ul>`,
-    urlImage: '/assets/images/sony-headphones.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com.png?tr=w-300',
     reviews: 367,
     price: 349.99,
-    previusPrice: null
+    previusPrice: null,
+    imagePosition: {
+      top: '20px',
+      right: '20px',
+      width: '250px'
+    }
   },
   {
     id: '3',
@@ -46,10 +60,16 @@ export const PRODUCTS = [
                     <li>Conexión dual HDMI 2.1 + DisplayPort 1.4</li>
                     <li>Diseño futurista con RGB Core Lighting y soporte VESA</li>
                   </ul>`,
-    urlImage: '/assets/images/gaming-monitor.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(4).png?tr=h-300,updatedAt=1748051727520',
     reviews: 189,
     price: 699.99,
-    previusPrice: 799.99
+    previusPrice: 799.99,
+     imagePosition: {
+      top: '40px',
+      right: '80px',
+      width: '150px',
+      scale: '1.7'
+    }
   },
   {
     id: '4',
@@ -63,10 +83,17 @@ export const PRODUCTS = [
                     <li>6 teclas macro dedicadas y perfil de aluminio aeronáutico</li>
                     <li>Compatibilidad con <b>Elgato Stream Deck</b> integrada</li>
                   </ul>`,
-    urlImage: '/assets/images/mechanical-keyboard.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(5).png?updatedAt=1748054035470',
     reviews: 432,
     price: 199.99,
-    previusPrice: 249.99
+    previusPrice: 249.99,
+     imagePosition: {
+      top: '10px',
+      right: '40px',
+      width: '250px',
+      scale: '1.5'
+
+    }
   },
   {
     id: '5',
@@ -80,10 +107,15 @@ export const PRODUCTS = [
                     <li>Tempest 3D AudioTech y DualSense con retroceso háptico</li>
                     <li>Incluye juego preinstalado <b>Astro's Playroom</b></li>
                   </ul>`,
-    urlImage: '/assets/images/ps5-digital.jpg',
+    urlImage: 'https://pngimg.com/uploads/laptop/laptop_PNG101766.png',
     reviews: 891,
     price: 399.99,
-    previusPrice: null
+    previusPrice: null,
+      imagePosition: {
+        top: '-20px',
+        right: '20px',
+        width: '250px'
+      }
   },
   {
     id: '6',
@@ -97,10 +129,17 @@ export const PRODUCTS = [
                     <li>Detección omnidireccional de obstáculos con APAS 5.0</li>
                     <li>Plegado compacto y modo QuickShot inteligente</li>
                   </ul>`,
-    urlImage: '/assets/images/dji-drone.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(6).png?updatedAt=1748055345845',
     reviews: 157,
     price: 2199.99,
-    previusPrice: 2599.99
+    previusPrice: 2599.99,
+     imagePosition: {
+      top: '20px',
+      right: '20px',
+      width: '250px',
+      scale: '2.0'
+
+    }
   },
   {
     id: '7',
@@ -114,10 +153,17 @@ export const PRODUCTS = [
                     <li>Mapas TOPO y ski resort maps preinstalados</li>
                     <li>Autonomía inteligente: <b>37 días</b> en modo smartwatch</li>
                   </ul>`,
-    urlImage: '/assets/images/garmin-watch.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(7).png?updatedAt=1748055532592',
     reviews: 294,
     price: 899.99,
-    previusPrice: 999.99
+    previusPrice: 999.99,
+     imagePosition: {
+      top: '20px',
+      right: '70px',
+      width: '150px',
+      scale: '1.5'
+
+    }
   },
   {
     id: '8',
@@ -131,10 +177,16 @@ export const PRODUCTS = [
                     <li>Soporte <b>AV1 encode</b> y 3 monitores 4K simultáneos</li>
                     <li>PCIe 5.0 y consumo máximo de 450W</li>
                   </ul>`,
-    urlImage: '/assets/images/nvidia-gpu.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(8).png?updatedAt=1748055842989',
     reviews: 678,
     price: 1599.99,
-    previusPrice: 1799.99
+    previusPrice: 1799.99,
+     imagePosition: {
+      top: '20px',
+      right: '20px',
+      width: '250px',
+      scale: '1.5'
+    }
   },
   {
     id: '9',
@@ -148,10 +200,15 @@ export const PRODUCTS = [
                     <li>Resistencia <b>IP68</b> y cuadro de altavoces AKG</li>
                     <li>Modo DeX para experiencia tipo PC</li>
                   </ul>`,
-    urlImage: '/assets/images/galaxy-tablet.jpg',
+    urlImage: 'https://pngimg.com/uploads/laptop/laptop_PNG101766.png',
     reviews: 412,
     price: 1199.99,
-    previusPrice: null
+    previusPrice: null,
+     imagePosition: {
+      top: '-20px',
+      right: '20px',
+      width: '250px'
+    }
   },
   {
     id: '10',
@@ -165,9 +222,15 @@ export const PRODUCTS = [
                     <li>Pantalla articulada táctil de 3" y EVF 3.69M-dot</li>
                     <li>Conectividad profesional: Wi-Fi 5GHz, FTP y USB 3.2</li>
                   </ul>`,
-    urlImage: '/assets/images/sony-camera.jpg',
+    urlImage: 'https://ik.imagekit.io/6ejpdd7jf/pngwing.com%20(9).png?updatedAt=1748056011897',
     reviews: 529,
     price: 2499.99,
-    previusPrice: 2799.99
+    previusPrice: 2799.99,
+     imagePosition: {
+      top: '10px',
+      right: '20px',
+      width: '250px',
+      scale: '1.2'
+    }
   }
 ];

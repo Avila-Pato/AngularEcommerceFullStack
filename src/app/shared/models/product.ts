@@ -7,4 +7,6 @@ export interface Product {
     reviews: number;
     price: number;
     previusPrice: number | null;
+    imagePosition:  { top: string; right: string; width: string; scale?: string } | null;
+    
 }
