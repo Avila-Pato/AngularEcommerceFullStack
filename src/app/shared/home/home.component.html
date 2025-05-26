@@ -1,9 +1,11 @@
-<section class="relative mx-12 mt-4 h-[1000px] -z-0">
+<main class="min">
+
+<section class="relative mx-12 mt-24  -z-0">
   <div
-    class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 gap-2 min-h-screen items-center"
+    class="grid grid-cols-1 lg:grid-cols-2 md:grid-cols-1 min-h-screen  gap-2 items-center"
   >
-    <div class="pb-12">
-      <h1 class="text-4xl pb-12 font-bold">
+    <div class="pb-28 ">
+      <h1 class="text-4xl pb-9  font-bold">
         Dispositivos, innovación & velocidad, todo en un solo lugar
       </h1>
       <p class="text-lg">
@@ -89,3 +91,12 @@
     </div>
   </div>
 </section>
+<section class="my-2 space-y-2">
+    <h2 class="text-center font-bold text-gray-950 text-3xl sm:text-4xl"></h2>
+    <article class=" mx-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 justify-center">
+      @for (product of products; track $index) {
+        <app-home-product [product]="product"  />
+      }
+    </article>
+</section>
+</main>

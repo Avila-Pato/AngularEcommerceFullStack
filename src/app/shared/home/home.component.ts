@@ -2,10 +2,11 @@ import { Component } from '@angular/core';
 import { ProductOfferComponent } from '../components/product-offer/product-offer.component';
 import { Product } from '../models/product';
 import { PRODUCTS } from '../../mock/products';
+import { HomeProductComponent } from "./components/home-product/home-product.component";
 
 @Component({
   selector: 'app-home',
-  imports: [ProductOfferComponent],
+  imports: [ProductOfferComponent, HomeProductComponent, ],
   standalone: true,
   templateUrl: './home.component.html',
   styleUrl: './home.component.css'
