@@ -1,4 +1,4 @@
-<div class="relative rounded-md shadow-md max-w-full p-6 flex bg-white">
+<div class="relative rounded-md shadow-md max-w-full p-6 flex ">
   <!-- Contenido del producto -->
   <div class="w-1/2 ml-9">
     <h2 [innerHTML]="getSafeHtml(product().name)" class="text-2xl font-medium"></h2>
@@ -50,7 +50,7 @@
   </div>
 
   <!-- Badge de descuento -->
-  <div class="absolute top-0 right-0 border py-2 px-3 rounded-full mt-4 mr-4 text-white font-bold bg-red-500 z-10">
+  <div class="absolute top-0 right-0 border py-2 px-3 rounded-b-2xl mt-4 mr-4 text-white font-bold bg-red-500 z-10">
     {{ discount | percent }}
   </div>
 </div>
